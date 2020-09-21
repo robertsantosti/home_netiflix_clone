@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--black);
+    color: #FFF;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    color: var(--red);
+    font-size: 3rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+header nav a {
+    color: #AAA;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+/** Banner **/
+.main-banner {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5) 100%), url('../img/capa-house.jpg');
+    background-size: cover;
+    height: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-banner .title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.main-banner .description {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.main-banner .btn {
+    background-color: rgba(0, 0, 0, .5);
+    border: 0;
+    color: #FFF;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    transition: .5s;
+}
+
+.main-banner .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main-banner .btn .fas,
+.main-banner .btn .far,
+.main-banner .btn .fab {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 2%;
+}
+
+.main-banner .container {
+    width: 60%;
+}
